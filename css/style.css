@@ -1,0 +1,23 @@
+/* NORMALIZER */
+body {
+	margin: 0;
+}
+h1,h2,h3,p {
+	margin: 0 0 1rem;
+}
+/* MAIN */
+body {
+	background-color: rgb(4, 1, 24);
+	color: rgb(219, 127, 241);
+	font-family: "Open sans", sans-serif;
+}
+.container {
+	width: 100%;
+	max-width: 680px;
+	margin: auto;
+	background-color: rgba(255, 255, 255, .1);
+	padding: 2rem 2rem 3rem;
+}
+#list {
+	list-style: none;
+}
