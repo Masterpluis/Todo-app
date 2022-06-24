@@ -20,4 +20,32 @@ body {
 }
 #list {
 	list-style: none;
+	padding: 0;
+}
+#list>li {
+	background-color: rgba(255,255,255,.1);
+	margin-bottom: .5rem;
+	border-radius: .5rem;
+	display: flex;
+}
+#list>li.inProgress {
+	background-color: rgba(219, 127, 241, .4);
+}
+#list>li.completed {
+	text-decoration: line-through;
+	color: rgb(85, 72, 88);
+}
+#list label {
+	display: block;
+	padding: .5rem;
+	flex-grow: 1;
+}
+#list a {
+	display: block;
+	width: 1rem;
+	padding: .5rem;
+}
+#list img {
+	width: 100%;
+	height: 100%;
 }
