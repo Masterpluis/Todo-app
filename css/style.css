@@ -5,17 +5,22 @@ body {
 h1,h2,h3,p {
 	margin: 0 0 1rem;
 }
+/* VARIABLES */
+:root {
+	--mainPrimairColor: rgb(219, 127, 241);
+	--mainTransparentColor: rgba(255, 255, 255, .1);
+}
 /* MAIN */
 body {
 	background-color: rgb(4, 1, 24);
-	color: rgb(219, 127, 241);
+	color: var(--mainPrimairColor);
 	font-family: "Open sans", sans-serif;
 }
-.container {
+main {
 	width: 100%;
 	max-width: 680px;
 	margin: auto;
-	background-color: rgba(255, 255, 255, .1);
+	background-color: var(--mainTransparentColor);
 	padding: 2rem 2rem 3rem;
 }
 #list {
@@ -23,27 +28,42 @@ body {
 	padding: 0;
 }
 #list>li {
-	background-color: rgba(255,255,255,.1);
+	background-color: var(--mainTransparentColor);
 	margin-bottom: .5rem;
 	border-radius: .5rem;
 	display: flex;
+	transition: color .3s, background-color .2s;
 }
 #list>li.inProgress {
 	background-color: rgba(219, 127, 241, .4);
 }
 #list>li.completed {
 	text-decoration: line-through;
-	color: rgb(85, 72, 88);
+	background-color: rgba(4, 1, 24, 0.3);
+	color: rgb(143, 132, 146);
 }
 #list label {
 	display: block;
-	padding: .5rem;
+	padding: .5rem .8rem;
 	flex-grow: 1;
+	cursor: pointer;
+}
+#list label:hover {
+	background-color: var(--mainTransparentColor);
+}
+#list input {
+	display: none;
 }
 #list a {
 	display: block;
 	width: 1rem;
-	padding: .5rem;
+	padding: .5rem .7rem;
+	border-radius: 0 .5rem .5rem 0;
+	border-left: 1px solid;
+	cursor: pointer;
+}
+#list a:hover {
+	background-color: var(--mainPrimairColor);
 }
 #list img {
 	width: 100%;
