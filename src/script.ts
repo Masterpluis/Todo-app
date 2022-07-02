@@ -48,7 +48,7 @@ window.addEventListener("load", () => {
 			checkbox.type = "checkbox";
 			label.append(checkbox, this.data.title);
 			const rIcon = document.createElement("img");
-			rIcon.src = "../media/trashIcon.svg";
+			rIcon.src = "./media/trashIcon.svg";
 			const rBtn = document.createElement("a");
 			rBtn.append(rIcon);
 			this.root.append(label, rBtn);
